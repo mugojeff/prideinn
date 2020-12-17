@@ -1,15 +1,6 @@
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html class="supernova"><head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5G06WK59Z5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5G06WK59Z5');
-</script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="alternate" type="application/json+oembed" href="https://www.jotform.com/oembed/?format=json&amp;url=https%3A%2F%2Fform.jotform.com%2F203504046832549" title="oEmbed Form">
 <link rel="alternate" type="text/xml+oembed" href="https://www.jotform.com/oembed/?format=xml&amp;url=https%3A%2F%2Fform.jotform.com%2F203504046832549" title="oEmbed Form">
@@ -17,16 +8,15 @@
 <meta property="og:url" content="https://form.jotform.com/203504046832549" >
 <meta property="og:description" content="Please click the link to complete this form." >
 <meta name="slack-app-id" content="AHNMASS8M">
-<link rel="shortcut icon" href="www.prideinnparadise.netlify.app">
 <link rel="canonical" href="https://form.jotform.com/203504046832549" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />
 <meta name="HandheldFriendly" content="true" />
 <title>Prideinn Paradise</title>
-<link href="https://cdn.jotfor.ms/static/formCss.css?3.3.22365" rel="stylesheet" type="text/css" />
-<link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.22365" />
-<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.22365" />
+<link href="https://cdn.jotfor.ms/static/formCss.css?3.3.22366" rel="stylesheet" type="text/css" />
+<link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.22366" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.22366" />
 <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/5495488a700cc478508b4567.css?themeRevisionID=5cf3a016dd9c5671876e9d31"/>
-<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.22365" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.22366" />
 <style type="text/css">
 
 
@@ -186,15 +176,19 @@
     /* Injected CSS Code */
 </style>
 
-<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/buttons/form-submit-button-carbon_rounded.css?3.3.22365"/>
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/buttons/form-submit-button-3d_round_yellow.css?3.3.22366"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.min.js"></script>
+<script src="https://cdn.jotfor.ms/js/vendor/jquery-1.8.0.min.js?v=3.3.22366" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/vendor/maskedinput.min.js?v=3.3.22366" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/vendor/jquery.maskedinput.min.js?v=3.3.22366" type="text/javascript"></script>
 <script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
-<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.22365" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.22366" type="text/javascript"></script>
 <script type="text/javascript">
 	JotForm.init(function(){
       setTimeout(function() {
           $('input_21').hint('ex: myname@example.com');
        }, 20);
+      JotForm.setPhoneMaskingValidator( 'input_28_full', '07-########' );
 
  JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
  JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
@@ -206,6 +200,15 @@
  JotForm.setCalendar("23", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":false,"custom":false,"ranges":false,"start":"","end":""});
  JotForm.formatDate({date:(new Date()), dateField:$("id_"+23)});
       JotForm.description('input_23', 'What\'s your desired date of reservation');
+
+ JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+ JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+ JotForm.calendarOther = {"today":"Today"};
+ var languageOptions = document.querySelectorAll('#langList li'); 
+ for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
+   languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("35", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":false,"custom":false,"ranges":false,"start":"","end":""}); }, 0); });
+ } 
+ JotForm.setCalendar("35", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":false,"custom":false,"ranges":false,"start":"","end":""});
 if (window.JotForm && JotForm.accessible) $('input_29').setAttribute('tabindex',0);
       JotForm.setCustomHint( 'input_29', 'message' );
 	JotForm.newDefaultTheme = false;
@@ -214,9 +217,9 @@ if (window.JotForm && JotForm.accessible) $('input_29').setAttribute('tabindex',
     /*INIT-END*/
 	});
 
-   JotForm.prepareCalculationsOnTheFly([null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"email","qid":"21","subLabel":"example@example.com","text":"E-mail:","type":"control_email"},null,{"description":"What's your desired date of reservation","name":"desiredDate","qid":"23","text":"Desired date of reservation","type":"control_datetime"},null,null,{"description":"","name":"name","qid":"26","text":"Name","type":"control_fullname"},null,{"description":"","name":"phoneNumber","qid":"28","text":"Phone Number","type":"control_phone"},{"description":"","name":"reservationInformation","qid":"29","subLabel":"","text":"Reservation information","type":"control_textarea"},{"name":"submit","qid":"30","text":"Submit","type":"control_button"}]);
+   JotForm.prepareCalculationsOnTheFly([null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"email","qid":"21","subLabel":"example@example.com","text":"E-mail:","type":"control_email"},null,{"description":"What's your desired date of reservation","name":"checkIn","qid":"23","text":"Check In","type":"control_datetime"},null,null,{"description":"","name":"name","qid":"26","text":"Name","type":"control_fullname"},null,{"description":"","name":"phoneNumber","qid":"28","text":"Phone Number","type":"control_phone"},{"description":"","name":"reservationInformation","qid":"29","subLabel":"","text":"Reservation information","type":"control_textarea"},{"name":"submit","qid":"30","text":"Submit","type":"control_button"},null,null,null,null,{"description":"","name":"checkOut","qid":"35","text":"Check Out ","type":"control_datetime"}]);
    setTimeout(function() {
-JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"email","qid":"21","subLabel":"example@example.com","text":"E-mail:","type":"control_email"},null,{"description":"What's your desired date of reservation","name":"desiredDate","qid":"23","text":"Desired date of reservation","type":"control_datetime"},null,null,{"description":"","name":"name","qid":"26","text":"Name","type":"control_fullname"},null,{"description":"","name":"phoneNumber","qid":"28","text":"Phone Number","type":"control_phone"},{"description":"","name":"reservationInformation","qid":"29","subLabel":"","text":"Reservation information","type":"control_textarea"},{"name":"submit","qid":"30","text":"Submit","type":"control_button"}]);}, 20); 
+JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"email","qid":"21","subLabel":"example@example.com","text":"E-mail:","type":"control_email"},null,{"description":"What's your desired date of reservation","name":"checkIn","qid":"23","text":"Check In","type":"control_datetime"},null,null,{"description":"","name":"name","qid":"26","text":"Name","type":"control_fullname"},null,{"description":"","name":"phoneNumber","qid":"28","text":"Phone Number","type":"control_phone"},{"description":"","name":"reservationInformation","qid":"29","subLabel":"","text":"Reservation information","type":"control_textarea"},{"name":"submit","qid":"30","text":"Submit","type":"control_button"},null,null,null,null,{"description":"","name":"checkOut","qid":"35","text":"Check Out ","type":"control_datetime"}]);}, 20); 
 </script>
 </head>
 <body>
@@ -261,38 +264,22 @@ JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null
         </div>
       </li>
       <li class="form-line jf-required" data-type="control_phone" id="id_28">
-        <label class="form-label form-label-top" id="label_28" for="input_28_country">
+        <label class="form-label form-label-top" id="label_28" for="input_28_full">
           Phone Number
           <span class="form-required">
             *
           </span>
         </label>
         <div id="cid_28" class="form-input-wide jf-required">
-          <div data-wrapper-react="true" class="extended">
-            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="countryCode">
-              <input type="tel" id="input_28_country" name="q28_phoneNumber[country]" class="form-textbox validate[required]" value="" data-component="countryCode" aria-labelledby="label_28 sublabel_28_country" required="" />
-              <span class="phone-separate" aria-hidden="true">
-                 -
-              </span>
-              <label class="form-sub-label" for="input_28_country" id="sublabel_28_country" style="min-height:13px" aria-hidden="false"> Country Code </label>
-            </span>
-            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="areaCode">
-              <input type="tel" id="input_28_area" name="q28_phoneNumber[area]" class="form-textbox validate[required]" value="" data-component="areaCode" aria-labelledby="label_28 sublabel_28_area" required="" />
-              <span class="phone-separate" aria-hidden="true">
-                 -
-              </span>
-              <label class="form-sub-label" for="input_28_area" id="sublabel_28_area" style="min-height:13px" aria-hidden="false"> Area Code </label>
-            </span>
-            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="phone">
-              <input type="tel" id="input_28_phone" name="q28_phoneNumber[phone]" class="form-textbox validate[required]" value="" data-component="phone" aria-labelledby="label_28 sublabel_28_phone" required="" />
-              <label class="form-sub-label" for="input_28_phone" id="sublabel_28_phone" style="min-height:13px" aria-hidden="false"> Phone Number </label>
-            </span>
-          </div>
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="tel" id="input_28_full" name="q28_phoneNumber[full]" data-type="mask-number" class="mask-phone-number form-textbox validate[required, Fill Mask]" autoComplete="off" data-masked="true" value="" data-component="phone" aria-labelledby="label_28 sublabel_28_masked" required="" />
+            <label class="form-sub-label" for="input_28_full" id="sublabel_28_masked" style="min-height:13px" aria-hidden="false"> Please enter a valid phone number. </label>
+          </span>
         </div>
       </li>
       <li class="form-line jf-required" data-type="control_datetime" id="id_23">
         <label class="form-label form-label-top" id="label_23" for="lite_mode_23">
-          Desired date of reservation
+          Check In
           <span class="form-required">
             *
           </span>
@@ -301,21 +288,21 @@ JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null
           <div data-wrapper-react="true">
             <div style="display:none">
               <span class="form-sub-label-container" style="vertical-align:top">
-                <input type="tel" class="form-textbox validate[required, disallowPast, limitDate]" id="month_23" name="q23_desiredDate[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="12" required="" autoComplete="off" aria-labelledby="label_23 sublabel_23_month" />
+                <input type="tel" class="form-textbox validate[required, disallowPast, limitDate]" id="month_23" name="q23_checkIn[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="12" required="" autoComplete="off" aria-labelledby="label_23 sublabel_23_month" />
                 <span class="date-separate" aria-hidden="true">
                    -
                 </span>
                 <label class="form-sub-label" for="month_23" id="sublabel_23_month" style="min-height:13px" aria-hidden="false"> Month </label>
               </span>
               <span class="form-sub-label-container" style="vertical-align:top">
-                <input type="tel" class="currentDate form-textbox validate[required, disallowPast, limitDate]" id="day_23" name="q23_desiredDate[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="17" required="" autoComplete="off" aria-labelledby="label_23 sublabel_23_day" />
+                <input type="tel" class="currentDate form-textbox validate[required, disallowPast, limitDate]" id="day_23" name="q23_checkIn[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="17" required="" autoComplete="off" aria-labelledby="label_23 sublabel_23_day" />
                 <span class="date-separate" aria-hidden="true">
                    -
                 </span>
                 <label class="form-sub-label" for="day_23" id="sublabel_23_day" style="min-height:13px" aria-hidden="false"> Day </label>
               </span>
               <span class="form-sub-label-container" style="vertical-align:top">
-                <input type="tel" class="form-textbox validate[required, disallowPast, limitDate]" id="year_23" name="q23_desiredDate[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="2020" required="" autoComplete="off" aria-labelledby="label_23 sublabel_23_year" />
+                <input type="tel" class="form-textbox validate[required, disallowPast, limitDate]" id="year_23" name="q23_checkIn[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="2020" required="" autoComplete="off" aria-labelledby="label_23 sublabel_23_year" />
                 <label class="form-sub-label" for="year_23" id="sublabel_23_year" style="min-height:13px" aria-hidden="false"> Year </label>
               </span>
             </div>
@@ -323,6 +310,43 @@ JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null
               <input type="text" class="form-textbox validate[required, disallowPast, limitDate, validateLiteDate]" id="lite_mode_23" size="12" data-maxlength="12" maxLength="12" data-age="" value="12-17-2020" required="" data-format="mmddyyyy" data-seperator="-" placeholder="mm-dd-yyyy" autoComplete="off" aria-labelledby="label_23 sublabel_23_litemode" />
               <img class="showAutoCalendar newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_23_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="No" data-version="v1" />
               <label class="form-sub-label" for="lite_mode_23" id="sublabel_23_litemode" style="min-height:13px" aria-hidden="false"> Date </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_datetime" id="id_35">
+        <label class="form-label form-label-top" id="label_35" for="lite_mode_35">
+          Check Out
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_35" class="form-input-wide jf-required">
+          <div data-wrapper-react="true">
+            <div style="display:none">
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[required, disallowPast, limitDate]" id="month_35" name="q35_checkOut[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" required="" autoComplete="off" aria-labelledby="label_35 sublabel_35_month" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="month_35" id="sublabel_35_month" style="min-height:13px" aria-hidden="false"> Month </label>
+              </span>
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[required, disallowPast, limitDate]" id="day_35" name="q35_checkOut[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" required="" autoComplete="off" aria-labelledby="label_35 sublabel_35_day" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="day_35" id="sublabel_35_day" style="min-height:13px" aria-hidden="false"> Day </label>
+              </span>
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[required, disallowPast, limitDate]" id="year_35" name="q35_checkOut[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="" required="" autoComplete="off" aria-labelledby="label_35 sublabel_35_year" />
+                <label class="form-sub-label" for="year_35" id="sublabel_35_year" style="min-height:13px" aria-hidden="false"> Year </label>
+              </span>
+            </div>
+            <span class="form-sub-label-container" style="vertical-align:top">
+              <input type="text" class="form-textbox validate[required, disallowPast, limitDate, validateLiteDate]" id="lite_mode_35" size="12" data-maxlength="12" maxLength="12" data-age="" value="" required="" data-format="mmddyyyy" data-seperator="-" placeholder="mm-dd-yyyy" autoComplete="off" aria-labelledby="label_35 sublabel_35_litemode" />
+              <img class="showAutoCalendar newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_35_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="No" data-version="v1" />
+              <label class="form-sub-label" for="lite_mode_35" id="sublabel_35_litemode" style="min-height:13px" aria-hidden="false"> Date </label>
             </span>
           </div>
         </div>
@@ -336,7 +360,7 @@ JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null
       <li class="form-line" data-type="control_button" id="id_30">
         <div id="cid_30" class="form-input-wide">
           <div style="margin-left:156px" data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
-            <button id="input_30" type="submit" class="form-submit-button form-submit-button-carbon_rounded submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+            <button id="input_30" type="submit" class="form-submit-button form-submit-button-3d_round_yellow submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
               Submit
             </button>
           </div>
